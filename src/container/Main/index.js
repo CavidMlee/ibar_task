@@ -152,7 +152,7 @@ const Main = () => {
     }
 
     const handleSerchItem = (e) => {
-        const filterData = json.filter(item => item.title.toUpperCase().includes(e.target.value.toUpperCase() || ''))
+        const filterData = json.filter(item => item.name.toUpperCase().includes(e.target.value.toUpperCase() || ''))
 
         Promise.all(filterData).then(function (results) {
             dispatch(firstDataAction(results))
@@ -169,7 +169,7 @@ const Main = () => {
     return (
         <Container >
             <SearchContainer>
-                <label>Search title: </label>
+                <label>Search name: </label>
                 <Input name='search' onChange={handleSerchItem} />
             </SearchContainer>
             <form id='table_form' onSubmit={(e) => onSubmite(e)}></form>
