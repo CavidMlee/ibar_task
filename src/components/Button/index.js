@@ -1,12 +1,18 @@
 import React from 'react';
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
 
-export const Button = ({title,deleteColor = false, ...rest}) =>{
-    return(
+export const Button = ({ title, deleteColor = false, ...rest }) => {
+    return (
         <StyledButton {...rest} deleteColor={deleteColor}>
             <span>{title}</span>
         </StyledButton>
     )
+}
+
+Button.propTypes = {
+    title: PropTypes.string,
+    deleteColor: PropTypes.bool,
 }
 
 const StyledButton = styled.button`

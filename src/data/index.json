@@ -2,193 +2,193 @@
     {
         "id": 1,
         "name": "Cavid",
-        "surname":"Malikli",
-        "dateOfBirth":"06/10/1995",
-        "position":"Frontend",
-        "phoneNumber":"0518869626"
+        "surname": "Malikli",
+        "dateOfBirth": "06/10/1995",
+        "position": "Frontend",
+        "phoneNumber": "0518869626"
     },
     {
         "id": 2,
-        "name": "Cavid",
-        "surname":"Malikli",
-        "dateOfBirth":"06/10/1995",
-        "position":"Frontend",
-        "phoneNumber":"0518869626"
+        "name": "Ruslan",
+        "surname": "Hikiьэещм",
+        "dateOfBirth": "06/10/1995",
+        "position": "Frontend",
+        "phoneNumber": "0517778926"
     },
     {
         "id": 3,
-        "name": "Cavid",
-        "surname":"Malikli",
-        "dateOfBirth":"06/10/1995",
-        "position":"Frontend",
-        "phoneNumber":"0518869626"
+        "name": "Qumru",
+        "surname": "Cəlilova",
+        "dateOfBirth": "06/10/1998",
+        "position": "Dizayner",
+        "phoneNumber": "0556678937"
     },
     {
         "id": 4,
-        "name": "Cavid",
-        "surname":"Malikli",
-        "dateOfBirth":"06/10/1995",
-        "position":"Frontend",
-        "phoneNumber":"0518869626"
+        "name": "Sevda",
+        "surname": "Qüdrətli",
+        "dateOfBirth": "06/02/1995",
+        "position": "Rəssam",
+        "phoneNumber": "0517865678"
     },
     {
         "id": 5,
-        "name": "Cavid",
-        "surname":"Malikli",
-        "dateOfBirth":"06/10/1995",
-        "position":"Frontend",
-        "phoneNumber":"0518869626"
+        "name": "Yusif",
+        "surname": "Muradov",
+        "dateOfBirth": "06/10/1999",
+        "position": "Backend",
+        "phoneNumber": "0709857843"
     },
     {
         "id": 6,
-        "name": "Cavid",
-        "surname":"Malikli",
-        "dateOfBirth":"06/10/1995",
-        "position":"Frontend",
-        "phoneNumber":"0518869626"
+        "name": "Hikimət",
+        "surname": "Mubarzizli",
+        "dateOfBirth": "16/10/1985",
+        "position": "Usta",
+        "phoneNumber": "0557778835"
     },
     {
         "id": 7,
-        "name": "Cavid",
-        "surname":"Malikli",
-        "dateOfBirth":"06/10/1995",
-        "position":"Frontend",
-        "phoneNumber":"0518869626"
+        "name": "Sahib",
+        "surname": "Yusifov",
+        "dateOfBirth": "06/08/1985",
+        "position": "Frontend",
+        "phoneNumber": "0554567656"
     },
     {
         "id": 8,
-        "name": "Cavid",
-        "surname":"Malikli",
-        "dateOfBirth":"06/10/1995",
-        "position":"Frontend",
-        "phoneNumber":"0518869626"
+        "name": "Nurlan",
+        "surname": "Mubarizov",
+        "dateOfBirth": "26/11/1995",
+        "position": "Tələbə",
+        "phoneNumber": "0507866776"
     },
     {
         "id": 9,
-        "name": "Cavid",
-        "surname":"Malikli",
-        "dateOfBirth":"06/10/1995",
-        "position":"Frontend",
-        "phoneNumber":"0518869626"
+        "name": "Aynur",
+        "surname": "Hüseyinova",
+        "dateOfBirth": "01/10/1995",
+        "position": "Frontend",
+        "phoneNumber": "0709908909"
     },
     {
         "id": 10,
-        "name": "Cavid",
-        "surname":"Malikli",
-        "dateOfBirth":"06/10/1995",
-        "position":"Frontend",
-        "phoneNumber":"0518869626"
+        "name": "Cəlil",
+        "surname": "Mahmudov",
+        "dateOfBirth": "06/08/1994",
+        "position": "Hüquqşunas",
+        "phoneNumber": "0512435678"
     },
     {
         "id": 11,
-        "name": "Cavid",
-        "surname":"Malikli",
-        "dateOfBirth":"06/10/1995",
-        "position":"Frontend",
-        "phoneNumber":"0518869626"
+        "name": "Vusal",
+        "surname": "Haciyev",
+        "dateOfBirth": "06/07/1995",
+        "position": "Sistem Admini",
+        "phoneNumber": "0557889975"
     },
     {
         "id": 12,
-        "name": "Cavid",
-        "surname":"Malikli",
-        "dateOfBirth":"06/10/1995",
-        "position":"Frontend",
-        "phoneNumber":"0518869626"
+        "name": "Qurban",
+        "surname": "Qasımov",
+        "dateOfBirth": "17/07/1995",
+        "position": "Net admin",
+        "phoneNumber": "0509877878"
     },
     {
         "id": 13,
-        "name": "Cavid",
-        "surname":"Malikli",
-        "dateOfBirth":"06/10/1995",
-        "position":"Frontend",
-        "phoneNumber":"0518869626"
+        "name": "Məlahət",
+        "surname": "Nuriyeva",
+        "dateOfBirth": "06/12/1995",
+        "position": "Proqramist",
+        "phoneNumber": "0507896655"
     },
     {
         "id": 14,
-        "name": "Cavid",
-        "surname":"Malikli",
-        "dateOfBirth":"06/10/1995",
-        "position":"Frontend",
-        "phoneNumber":"0518869626"
+        "name": "Yaşar",
+        "surname": "Nurəliyev",
+        "dateOfBirth": "06/02/1999",
+        "position": "Tələbə",
+        "phoneNumber": "070890987"
     },
     {
         "id": 15,
-        "name": "Cavid",
-        "surname":"Malikli",
-        "dateOfBirth":"06/10/1995",
-        "position":"Frontend",
-        "phoneNumber":"0518869626"
+        "name": "Şəhla",
+        "surname": "Hacıyeva",
+        "dateOfBirth": "06/09/1996",
+        "position": "Backend",
+        "phoneNumber": "0704457878"
     },
     {
         "id": 16,
-        "name": "Cavid",
-        "surname":"Malikli",
-        "dateOfBirth":"06/10/1995",
-        "position":"Frontend",
-        "phoneNumber":"0518869626"
+        "name": "Mübariz",
+        "surname": "Camallı",
+        "dateOfBirth": "06/10/1995",
+        "position": "Müəllim",
+        "phoneNumber": "0556678767"
     },
     {
         "id": 17,
-        "name": "Cavid",
-        "surname":"Malikli",
-        "dateOfBirth":"06/10/1995",
-        "position":"Frontend",
-        "phoneNumber":"0518869626"
+        "name": "Aydan",
+        "surname": "Hikimətli",
+        "dateOfBirth": "06/10/1995",
+        "position": "Frontend",
+        "phoneNumber": "0518869626"
     },
     {
         "id": 18,
-        "name": "Cavid",
-        "surname":"Malikli",
-        "dateOfBirth":"06/10/1995",
-        "position":"Frontend",
-        "phoneNumber":"0518869626"
+        "name": "Namiq",
+        "surname": "Orucov",
+        "dateOfBirth": "06/10/1995",
+        "position": "Usta",
+        "phoneNumber": "0518869626"
     },
     {
         "id": 19,
-        "name": "Cavid",
-        "surname":"Malikli",
-        "dateOfBirth":"06/10/1995",
-        "position":"Frontend",
-        "phoneNumber":"0518869626"
+        "name": "Anar",
+        "surname": "Qasimli",
+        "dateOfBirth": "06/10/1995",
+        "position": "Usta",
+        "phoneNumber": "0518869626"
     },
     {
         "id": 20,
-        "name": "Cavid",
-        "surname":"Malikli",
-        "dateOfBirth":"06/10/1995",
-        "position":"Frontend",
-        "phoneNumber":"0518869626"
+        "name": "Səmayə",
+        "surname": "Nizamova",
+        "dateOfBirth": "06/10/1995",
+        "position": "Həkim",
+        "phoneNumber": "0518869626"
     },
     {
         "id": 21,
-        "name": "Cavid",
-        "surname":"Malikli",
-        "dateOfBirth":"06/10/1995",
-        "position":"Frontend",
-        "phoneNumber":"0518869626"
+        "name": "Ceyran",
+        "surname": "Şükürova",
+        "dateOfBirth": "06/10/1995",
+        "position": "Müəllimə",
+        "phoneNumber": "0518869626"
     },
     {
         "id": 22,
-        "name": "Cavid",
-        "surname":"Malikli",
-        "dateOfBirth":"06/10/1995",
-        "position":"Frontend",
-        "phoneNumber":"0518869626"
+        "name": "Davud",
+        "surname": "Qasımov",
+        "dateOfBirth": "06/10/1995",
+        "position": "Backend",
+        "phoneNumber": "0518869626"
     },
     {
         "id": 23,
-        "name": "Cavid",
-        "surname":"Malikli",
-        "dateOfBirth":"06/10/1995",
-        "position":"Frontend",
-        "phoneNumber":"0518869626"
+        "name": "Turan",
+        "surname": "Malikli",
+        "dateOfBirth": "06/10/1995",
+        "position": "Aşbaz",
+        "phoneNumber": "0518869626"
     },
     {
         "id": 24,
-        "name": "Cavid",
-        "surname":"Malikli",
-        "dateOfBirth":"06/10/1995",
-        "position":"Frontend",
-        "phoneNumber":"0518869626"
+        "name": "Turqay",
+        "surname": "Malikli",
+        "dateOfBirth": "06/10/1995",
+        "position": "Həkim",
+        "phoneNumber": "0518869626"
     }
 ]

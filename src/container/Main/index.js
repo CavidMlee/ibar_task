@@ -2,6 +2,8 @@ import React, { useState, useEffect, useRef } from 'react';
 import json from '../../data/index.json';
 import { Pagination, UndoData, Button, Input } from '../../components';
 import styled from 'styled-components';
+import { useDispatch, useSelector } from 'react-redux';
+import { firstDataAction } from '../../store/firstData'
 
 
 const rowCount = 10
@@ -14,20 +16,17 @@ const Main = () => {
 
     const [page, setPage] = useState(1)
     const [data, setData] = useState([])
-    const [firstData, setFirstData] = useState([])
     const [editItem, setEditItem] = useState(null)
     const [checkedItems, setCheckedItems] = useState([])
 
+    const firstData = useSelector(state => state.firstData.data)
+
 
     const undoRef = useRef();
-
-
-    useEffect(() => {
-        setFirstData(json)
-    }, [])
+    const dispatch = useDispatch();
 
     useEffect(() => {
-        const sortFirstData = firstData.sort((a, b) => a.id - b.id);
+        const sortFirstData = firstData?.slice().sort((a, b) => a.id - b.id);
         setData(sortFirstData.slice(page * rowCount - rowCount, page * rowCount))
     }, [page, firstData])
 
@@ -69,7 +68,7 @@ const Main = () => {
             }
             else {
                 newData.splice(index, 1, { ...item, ...formDataValue(formdata) })
-                setFirstData(newData)
+                dispatch(firstDataAction(newData))
                 allEditItems = [...allEditItems, { ...item, ...formDataValue(formdata) }]
             }
 
@@ -89,11 +88,11 @@ const Main = () => {
 
     const onHandleDelete = async () => {
 
-        let dataCopy = firstData
+        let dataCopy = [...firstData]
         lastDeleteItems = []
         for (let i = 0; i < checkedItems.length; i++) {
 
-            const deletedItem = [...dataCopy.splice(firstData.map(item => { return item.id.toString() }).indexOf(checkedItems[i]), 1)]
+            const deletedItem = dataCopy.splice(dataCopy.map(item => { return item.id.toString() }).indexOf(checkedItems[i]), 1)
             allDeletedItem = [...allDeletedItem, ...deletedItem];
             lastDeleteItems = [...lastDeleteItems, ...deletedItem];
 
@@ -104,14 +103,14 @@ const Main = () => {
         }
 
         setCheckedItems([])
-        setFirstData([...dataCopy])
+        dispatch(firstDataAction([...dataCopy]))
 
         undoRef.current.showUndoPanel(true)
 
     }
 
     const onUndoItem = () => {
-        setFirstData([...firstData, ...lastDeleteItems])
+        dispatch(firstDataAction([...firstData, ...lastDeleteItems]))
 
         for (let i = 0; i < lastDeleteItems.length; i++) {
             allDeletedItem.splice(allDeletedItem.map(item => { return item.id.toString() }).indexOf(lastDeleteItems[i]), 1)
@@ -156,8 +155,15 @@ const Main = () => {
         const filterData = json.filter(item => item.title.toUpperCase().includes(e.target.value.toUpperCase() || ''))
 
         Promise.all(filterData).then(function (results) {
-            setFirstData(results)
+            dispatch(firstDataAction(results))
         })
+    }
+
+    const handleResetData = () => {
+        dispatch(firstDataAction(json))
+        allDeletedItem = []
+        lastDeleteItems = []
+        allEditItems = []
     }
 
     return (
@@ -182,7 +188,7 @@ const Main = () => {
                 </thead>
                 <tbody>
                     {data?.map((item, index) => {
-                        const { id, name, surname,dateOfBirth,position,phoneNumber } = item
+                        const { id, name, surname, dateOfBirth, position, phoneNumber } = item
 
 
                         return (
@@ -276,7 +282,13 @@ const Main = () => {
 
             <Button deleteColor onClick={onHandleDelete} title='Delete' />
 
-            <Button onClick={() => console.log({ 'updated': allEditItems, 'deleted': allDeletedItem })} title='Submite' />
+            <Button onClick={() => {
+                alert('updated və deleted məlumatları consolda göstərilib')
+                console.log({ 'updated': allEditItems, 'deleted': allDeletedItem })
+            }}
+                title='Submite' />
+
+            <Button deleteColor onClick={handleResetData} title='Reset Data' />
 
             <div>
                 <Pagination currentPage={page} setCurrentPage={setPage} maxPages={Math.ceil(firstData.length / 10)} />

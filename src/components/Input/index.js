@@ -2,11 +2,12 @@ import React from 'react';
 import styled from 'styled-components';
 
 
-export const Input =({...rest})=>{
-    return(
+export const Input = ({ ...rest }) => {
+    return (
         <StyledInput {...rest}></StyledInput>
     )
 }
+
 
 const StyledInput = styled.input`
     height: 35px;

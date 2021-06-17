@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
 
 export const Pagination = ({ maxPages, currentPage, setCurrentPage }) => {
 
@@ -33,11 +34,17 @@ export const Pagination = ({ maxPages, currentPage, setCurrentPage }) => {
             <div className="paginate-ctn">
                 <RoundEffect onClick={prevPage}> &lsaquo; </RoundEffect>
                 {items}
-                <RoundEffect  onClick={nextPage}> &rsaquo; </RoundEffect>
+                <RoundEffect onClick={nextPage}> &rsaquo; </RoundEffect>
             </div>
         </Container>
     );
     return (paginationRender);
+}
+
+Pagination.propTypes = {
+    maxPages: PropTypes.number,
+    currentPage: PropTypes.number,
+    setCurrentPage: PropTypes.func
 }
 
 const Container = styled.div`
@@ -55,8 +62,8 @@ const Container = styled.div`
 `
 
 const RoundEffect = styled.div`
-  color: ${props=>props.active ? 'white' : ' rgb(37, 90, 236)'};
-  background-color: ${props=>props.active ? 'rgb(37, 90, 236)' : '#FFF'} ;
+  color: ${props => props.active ? 'white' : ' rgb(37, 90, 236)'};
+  background-color: ${props => props.active ? 'rgb(37, 90, 236)' : '#FFF'} ;
   cursor:pointer;
   font-size:16px;
   display:flex;

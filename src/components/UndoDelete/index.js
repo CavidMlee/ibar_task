@@ -1,5 +1,6 @@
 import React, { useState, forwardRef, useImperativeHandle } from 'react';
 import styled, { keyframes } from 'styled-components';
+import PropTypes from 'prop-types';
 
 export const UndoData = forwardRef(({ undo }, ref) => {
     const [show, setShow] = useState(false)
@@ -35,6 +36,10 @@ export const UndoData = forwardRef(({ undo }, ref) => {
 
     )
 })
+
+UndoData.propTypes = {
+    undo: PropTypes.func
+}
 const center = `
     display: flex;
     justify-content: center;
